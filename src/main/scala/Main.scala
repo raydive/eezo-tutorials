@@ -17,6 +17,6 @@ import io.eezo.http.RouteTable
   * }}}
   */
 object Main extends EezoApp {
-  override def schema: Schema     = Schema.empty
+  override def schema: Schema     = AppSchema
   override def routes: RouteTable = Routes.table()
 }

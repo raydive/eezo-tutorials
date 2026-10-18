@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "tables": [
+    {
+      "name": "book",
+      "columns": [
+        {
+          "name": "author",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "checks": [],
+          "references": null
+        },
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "primaryKey": true,
+          "checks": [],
+          "references": null
+        },
+        {
+          "name": "notes",
+          "type": "text",
+          "nullable": true,
+          "primaryKey": false,
+          "checks": [],
+          "references": null
+        },
+        {
+          "name": "pages",
+          "type": "integer",
+          "nullable": false,
+          "primaryKey": false,
+          "checks": [],
+          "references": null
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "nullable": false,
+          "primaryKey": false,
+          "checks": [],
+          "references": null
+        }
+      ],
+      "indexes": [
+        {
+          "name": "uq_book_title",
+          "columns": [
+            "title"
+          ],
+          "unique": true
+        }
+      ]
+    }
+  ]
+}
